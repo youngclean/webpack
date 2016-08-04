@@ -1,0 +1,67 @@
+[
+    [{
+        "p": {
+            "aggType": "sum",
+            "dimType": "measureCol",
+            "name": "back_point",
+            "uk": "k0"
+        },
+        "t": "colH",
+        "v": "back_point"
+    }, {
+        "p": {
+            "aggType": "sum",
+            "dimType": "measureCol",
+            "name": "order_amt",
+            "uk": "k1"
+        },
+        "t": "colH",
+        "v": "order_amt"
+    }, {
+        "p": {
+            "aggType": "sum",
+            "dimType": "measureCol",
+            "name": "price",
+            "uk": "k2"
+        },
+        "t": "colH",
+        "v": "price"
+    }, {
+        "p": {
+            "aggType": "sum",
+            "dimType": "measureCol",
+            "name": "profit_amt",
+            "uk": "k3"
+        },
+        "t": "colH",
+        "v": "profit_amt"
+    }],
+    [{
+        "p": {
+            "fmt": "0.0%",
+            "raw": "423.6199999999998"
+        },
+        "t": "data",
+        "v": "42362.0%"
+    }, {
+        "p": {
+            "fmt": "#,##0.0",
+            "raw": "1.5154620255999994E7"
+        },
+        "t": "data",
+        "v": "15,154,620.3"
+    }, {
+        "p": {
+            "fmt": "#.00",
+            "raw": "757304.0899999996"
+        },
+        "t": "data",
+        "v": "757304.09"
+    }, {
+        "p": {
+            "raw": "1549090.02"
+        },
+        "t": "data",
+        "v": "1549090.02"
+    }]
+]

@@ -1,0 +1,266 @@
+.sc {
+    table {
+        border-spacing: 0;
+    }
+    .xaxis-hover {
+        color: #289de9!important
+    }
+    .sc-edit-name {
+        cursor: pointer;
+        visibility: hidden;
+    }
+    .sc-measure-box {
+        span {
+            cursor: default;
+        }
+        &.hvr, &:hover {
+            .sc-edit-name {
+                visibility: visible;
+            }
+        }
+    }
+    .sc-measure-value {
+        max-width: 80px;
+        overflow: hidden;
+    }
+    .sc-axis-y {
+        width: 80px;
+        display: table-cell;
+        overflow-y: hidden;
+        text-align: center;
+        .wm {
+            float: left;
+            white-space: nowrap;
+            -webkit-writing-mode: vertical-lr;
+            unicode-bidi: bidi-override;
+            margin-top: 12px;
+            padding-left: 4px;
+            span {
+                color: @label-color;
+            }
+        }
+        table {
+            float: right;
+            text-align: right;
+            margin-right: 5px;
+            margin-bottom: -1px;
+            vertical-align: middle;
+        }
+        td {
+            vertical-align: bottom;
+            position: relative;
+            &:after {
+                position: absolute;
+                right: -5px;
+                top: -1px;
+                width: 5px;
+                height: 1px;
+                content: '';
+                background-color: #CCC
+            }
+        }
+        tr:first-child {
+            td:after {
+                display: none;
+            }
+        }
+        .text-label {
+            display: flex;
+            justify-content: flex-end;
+            white-space: nowrap;
+        }
+    }
+    .sc-right {
+        .sc-axis-y {
+            .wm {
+                float: right;
+                padding-left: 0;
+                padding-right: 4px;
+            }
+            table {
+                float: left;
+                text-align: left;
+                margin-right: 0;
+                margin-left: 5px;
+            }
+            td:after {
+                right: auto;
+                left: -5px;
+            }
+            .text-label {
+                justify-content: flex-start;
+            }
+        }
+    }
+    .sc-col {
+        .sc-axis-y {
+            display: block;
+            td {
+                vertical-align: middle;
+                &:after {
+                    top: 0;
+                }
+            }
+            .text-label {
+                margin: 0;
+            }
+            .multi {
+                td {
+                    &:after {
+                        width: 100%
+                    }
+                }
+                .nbsp:after {
+                    display: none;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .sc-axis-x {
+            display: table-cell;
+            td {
+                text-align: left;
+                &:after {
+                    left: -1px
+                }
+            }
+        }
+    }
+    .sc-left-circle {
+        .sc-axis-y {
+            width: 30px;
+        }
+    }
+    .sc-xaxis-label {
+        width: 81px;
+        text-align: right;
+        height: 26px;
+        line-height: 26px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        em {
+            padding-right: 8px;
+            font-style: normal;
+            color: @label-color;
+        }
+    }
+    .sc-axis-x {
+        // max-height: 80px;
+        overflow-x: overlay;
+        overflow-y: hidden;
+        text-align: center;
+        padding-bottom: 4px;
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+            height: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: transparent;
+            &:hover {
+                background-color: #999;
+            }
+        }
+        tr {
+            height: 26px;
+        }
+        td {
+            position: relative;
+            text-align: center;
+            &:after {
+                position: absolute;
+                right: -1px;
+                top: 0;
+                width: 1px;
+                height: 5px;
+                content: '';
+                background-color: #CCC
+            }
+        }
+        .multi {
+            td {
+                &:after {
+                    height: 100%
+                }
+            }
+        }
+        .text-label {
+            display: block;
+            overflow: hidden;
+            padding-left: 2px;
+            &.r45 {
+                transform: rotate(45deg) translateX(4px);
+                -webkit-transform: rotate(45deg) translateX(4px);
+                white-space: nowrap;
+                overflow: visible;
+            }
+            &.r90 {
+                display: -webkit-inline-box;
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -webkit-writing-mode: vertical-lr;
+                white-space: nowrap;
+                margin-top: 2px;
+                overflow: visible;
+            }
+        }
+        .multi {
+            .text-label {
+                height: 24px;
+            }
+        }
+        .sc-edit-name {
+            margin-left: 8px;
+            vertical-align: 0
+        }
+    }
+    .sc-twis {
+        .sc-xaxis-label {
+            border-right: none;
+        }
+        .sc-axis-x {
+            table {
+                border-left: 1px solid #CCC;
+            }
+        }
+    }
+    .sc-twis-top {
+        .sc-axis-x {
+            padding-bottom: 0;
+            td {
+                &:after {
+                    top: auto;
+                    bottom: 0
+                }
+            }
+        }
+    }
+    .text-label {
+        color: @axis-color;
+        font-size: @label-size;
+    }
+    .sc-y-bottom {
+        .sc-xaxis-label {
+            width: 81px;
+        }
+    }
+    .sc-level-m {
+        width: 100%;
+        text-align: center;
+        padding-left: 15px;
+        .sc-edit-name {
+            margin-left: 5px
+        }
+    }
+    .sc-y-bottom, .sc-twis-top {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

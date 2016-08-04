@@ -1,0 +1,26 @@
+.sc {
+    .sc-chart {
+        overflow: hidden;
+        margin-right: -1px;
+        // 禁用选中,因为可能会拖动动作
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .sc-center-circle {
+        width: 100%;
+        .sc-chart {
+            float: left;
+        }
+        .sc-chart-pingpu {
+            .label-name {
+                margin: 0;
+            }
+        }
+        .label-name {
+            text-align: center;
+            color: @label-color;
+        }
+    }
+}

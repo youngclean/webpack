@@ -1,0 +1,162 @@
+.sc{
+  &.sc-indicator{
+    margin-top: -1px;
+    margin-left: 1px;
+  }
+  .sc-indicator-item{
+    display: table; // 保证对齐
+    float: left;
+    cursor: default;
+    visibility: hidden;
+    padding: 10px 10px 0;
+    border: 1px solid #DBDEE4;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    &.first{
+      margin-left: 0;
+    }
+    &.last-row{
+      margin-bottom: 0;
+    }
+    &:hover{
+      box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05), -5px 0 5px rgba(0, 0, 0, 0.05), 0 -5px 5px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05);
+    }
+    [data-ele]{
+      &.blue{
+        border: 1px solid #289DE9;
+      }
+    }
+    .unit{
+      border: none;
+    }
+    .item-name{
+      white-space: nowrap;
+      color: #333;
+      font-size: 14px;
+      line-height: 13px;
+    }
+    .item-number{
+      font-size: 28px;
+      line-height: 27px;
+      white-space: nowrap;
+      span{
+        display: inline-block;
+        color: #00B3CC;
+      }
+    }
+    .item-mea{
+      line-height: 15px;
+      .tit{
+        white-space: nowrap;
+        color: #999;
+      }
+      .num{
+        text-align: right;
+        white-space: nowrap;
+        font-size: 14px;
+      }
+      .unit{
+        text-align: right;
+        font-size: 14px;
+      }
+      .mea-icon{
+        width: 16px;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-left:6px;
+        &.arrow-minus{
+          color: #FBA731
+        }
+      }
+      &.mea-icon-type0, &.mea-icon-type1{
+        .arrow-rise{
+          color: #F15E5E
+        }
+        .arrow-reduce{
+          color: #40DE5A
+        }
+      }
+      &.mea-icon-type2, &.mea-icon-type3{
+        .arrow-rise{
+          color: #40DE5A
+        }
+        .arrow-reduce{
+          color: #F15E5E
+        }
+      }
+      &.mea-icon-type1, &.mea-icon-type3{
+        .icon.arrow-rise, .icon.arrow-reduce, .icon.arrow-minus{
+          &:before{
+            content: "\e6b7"
+          }
+        }
+      }
+      &.mea-icon-type4{
+        .mea-icon{
+          display: none
+        }
+      }
+    }
+    &.template-0{
+      .item-number{
+        margin-top: 2px;
+        margin-bottom: 6px;
+      }
+    }
+    &.template-1{
+      .item-name{
+        margin-top: 2px;
+        margin-bottom: 6px;
+      }
+    }
+    &.template-2{
+      .item-mea{
+        display: none
+      }
+    }
+
+    .table{
+      display: table;
+      width: 100%;
+    }
+    .row{
+      display: table-row;
+    }
+    .cell{
+      display: table-cell;
+    }
+    .rh-name{
+      height: 28px;
+    }
+    .rh-number{
+      height: 48px;
+    }
+    .rh-meta{
+      height: 26px;
+    }
+  }
+  &.thin{
+    &.sc-indicator{
+      overflow: hidden;
+      border-bottom: 1px solid transparent;
+      margin: 0 0 -1px -1px;
+    }
+    .sc-indicator-item{
+      border: 1px solid #ECEDEF;
+      border-right: none;
+      margin: -1px;
+      border-bottom: none;
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+  &.ready{
+    .sc-indicator-item{
+      visibility: visible;
+    }
+  }
+}
+.notitle .sc-indicator{
+  margin-top: 0
+}

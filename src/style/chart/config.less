@@ -1,0 +1,237 @@
+.sc{
+  .sc-config-setting{
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    color: #FFF;
+    font-size: 13px;
+    &:hover{
+      color: #E3F4FF
+    }
+  }
+  .sc-config{
+    position: absolute;
+    white-space: nowrap;
+    overflow-x: overlay;
+    top: 0;
+    opacity: .9;
+    height: 45px;
+    display: none;
+    width: 100%;
+    padding: 11px 0 0 35px;
+    .icon{
+      vertical-align: middle;
+      font-size: 18px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .split-line{
+      vertical-align: middle;
+      display: inline-block;
+      width: 1px;
+      height: 24px;
+      background-color: #E6E6E6;
+      margin: 0 10px;
+    }
+    label{
+      margin-right: 6px;
+      &.nomar{
+        margin-right: 0;
+      }
+    }
+    input{
+      margin-right: 4px;
+      vertical-align: middle;
+      cursor: pointer;
+      &.ang{
+        width: 50px;
+        text-align: center;
+      }
+    }
+    .config-more-box{
+      display: inline-block;
+      position: absolute;
+      // .sc-color-picker {
+      //     position: absolute;
+      //     left: -10px;
+      //     margin-top: -4px;
+      //     border-top: none;
+      // }
+      .more{
+        color: #289DE9;
+        cursor: pointer;
+        margin-left: 5px;
+        padding: 0 6px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+.sc-popup.more-panel{
+  position: absolute;
+  display: none;
+  width: 242px;
+  margin-top: 12px;
+  opacity: .9;
+  .tab-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    li{
+      float: left;
+      cursor: pointer;
+      border: 1px solid #289DE9;
+      padding: 3px 0;
+      width: 70px;
+      text-align: center;
+      color: #289DE9;
+      &.active{
+        background: #289DE9;
+        color: #FFF
+      }
+      &:first-child{
+        border-radius: 2px 0 0 2px;
+        border-right: none;
+      }
+      &:last-child{
+        border-radius: 0 2px 2px 0;
+        border-left: none;
+      }
+    }
+  }
+  .tab-nav-2{
+    li{
+      width: 100px;
+    }
+  }
+  .tab-content{
+    max-height: 84px;
+    overflow-y: overlay;
+    padding-left: 10px;
+    &::-webkit-scrollbar-track{
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar{
+      -webkit-appearance: none;
+      width: 3px;
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 6px;
+      background-color: #999;
+    }
+  }
+  .tab-panel{
+    display: none;
+    &.active{
+      display: block;
+      &.tab-panel-layout{
+        display: flex;
+      }
+    }
+    .err{
+      color: #D30F00;
+      margin: 0 0 4px 0;
+    }
+    .item{
+      margin-bottom: 6px;
+      .del{
+        display: none;
+        margin-left: 0;
+      }
+      &:hover{
+        .del{
+          display: inline;
+        }
+      }
+    }
+    input[type=text]{
+      width: 40px;
+      margin-left: 4px;
+      margin-right: 0;
+      padding: 2px;
+      &.tst{
+        margin-right: 4px;
+      }
+      &.ang{
+        width: 60px;
+        margin-bottom: 5px;
+      }
+    }
+    .mark-point{
+      display: block;
+      cursor: pointer;
+      padding: 2px 4px;
+      &:hover{
+        background: #E3F4FF
+      }
+      .del{
+        float: right;
+        font-size: 16px;
+      }
+    }
+  }
+  .tab-panel-layout{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    label{
+      margin-bottom: 5px;
+      margin-right: 0;
+      width: 100px;
+      &.nomar{
+        margin: 0
+      }
+      &.nowrap{
+        width: 100%;
+      }
+      input, select{
+        margin-left: 5px;
+      }
+      .tit{
+        width: 50px;
+        display: inline-block;
+      }
+    }
+    .dimsplit{
+      display: block;
+      width: auto;
+      margin: 0 0 0 3px;
+      select{
+        margin-left: 30px;
+      }
+    }
+  }
+  .tab-panel-select{
+    select{
+      margin-left: 30px;
+    }
+  }
+  .sc-color-picker{
+    position: absolute;
+    left: -1px;
+    margin-top: -4px;
+    border-top: none;
+  }
+  input{
+    margin-right: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .icon{
+    vertical-align: middle;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .legend-title{
+    margin-top: 8px;
+    input[type=text]{
+      width: 48%;
+      height: 24px;
+    }
+  }
+}

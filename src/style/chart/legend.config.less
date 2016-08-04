@@ -1,0 +1,251 @@
+.sc-legend-config {
+    position: absolute;
+    display: none;
+    text-align: left;
+    z-index: 4;
+    font-size: 12px;
+    .config-col {
+        float: left;
+    }
+    .config-lst {
+        float: left;
+        li {
+            padding: 5px 5px 5px 0;
+            .nm {
+                input {
+                    margin: 0;
+                    margin-left: 8px;
+                }
+            }
+            .tit {
+                font-weight: bold;
+                display: inline-block;
+                width: 40px;
+                text-align: right;
+            }
+        }
+        input {
+            vertical-align: middle;
+            margin: 0 4px 0 6px;
+        }
+        input[type=number] {
+            border: 1px solid #cccccc;
+            border-radius: 2px;
+            background-color: #ffffff;
+            outline: none;
+            padding: 2px 0 2px 4px;
+            width: 55px;
+            height: 28px;
+        }
+        .input-fmt {
+            display: block;
+            margin-left: 46px;
+            margin-bottom: 5px;
+        }
+        .split-lst {
+            max-height: 150px;
+            overflow-y: scroll;
+            margin-bottom: 5px;
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 5px;
+                height: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                background-color: transparent;
+                &:hover {
+                    background-color: #999;
+                }
+            }
+        }
+        .split-item {
+            margin-top: 5px;
+            margin-left: 18px;
+            label {
+                margin-right: 0;
+            }
+            input {
+                width: 55px;
+                margin: 0 2px 0 0;
+                &.col {
+                    width: 30px;
+                    cursor: pointer;
+                }
+            }
+            .del {
+                font-size: 14px;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+    .map-config-lst {
+        width: 262px
+    }
+    .sc-color-picker {
+        width: 230px;
+    }
+    &.dim-legend {
+        width: auto;
+    }
+    .split-desc {
+        display: inline-block;
+        color: #999;
+        margin-left: 10px;
+    }
+    &.lbs {
+        padding: 10px;
+        .config-lst {
+            margin-left: 6px;
+            li:first-child, .split {
+                padding-top: 0
+            }
+            .radio-box {
+                margin-top: 6px;
+                margin-bottom: 8px;
+            }
+            .tit {
+                font-weight: normal;
+                color: #666;
+                width: auto;
+            }
+            .split {
+                margin-left: 60px;
+                .tit {
+                    margin-bottom: 4px;
+                }
+            }
+            .lbs-split-lst {
+                max-height: 155px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar {
+                    -webkit-appearance: none;
+                    width: 5px;
+                    height: 5px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 5px;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: #999;
+                    }
+                }
+                li {
+                    input[type=text] {
+                        display: inline-block;
+                        pointer-events: none;
+                        width: 55px;
+                        margin: 3px 4px;
+                        background-color: transparent;
+                        border-color: transparent;
+                        text-align: center;
+                        &.tle {
+                            visibility: hidden;
+                        }
+                    }
+                    .hl {
+                        line-height: 27px;
+                    }
+                    &:hover {
+                        input[type=text] {
+                            pointer-events: all;
+                            background-color: #fff;
+                            &.tle {
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lbs-set-type {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        label:last-child {
+            margin-left: 15px
+        }
+    }
+    .default-panel {
+        .tit {
+            color: #666;
+            margin-right: 10px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        .icn {
+            font-size: 14px;
+        }
+    }
+    .custom-panel {
+        .display-flex;
+        .panel-left {
+            max-width: 230px;
+        }
+    }
+    .lbs-split-box {
+        .display-flex;
+    }
+    .lbs-split-lst {
+        li {
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px;
+            a {
+                display: inline-block;
+                margin: 0 4px;
+                width: 40px;
+                text-align: center;
+                max-width: 110px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .hl {
+                vertical-align: middle;
+                line-height: 8px;
+                display: inline-block;
+                height: 30px;
+                margin: 0 3px;
+            }
+        }
+    }
+    .lbs-icon-lst {
+        display: inline-block;
+        margin-left: 2px;
+        a {
+            display: inline-block;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            background: #eee;
+            border: 1px solid #ccc;
+            margin-right: 3px;
+            &:last-child {
+                margin-right: 0
+            }
+            &.current {
+                border-color: #289de9;
+                background: rgba(40, 157, 233, .2);
+                .icn {
+                    color: #289de9
+                }
+            }
+            .icn {
+                font-size: 16px;
+                color: #666;
+                vertical-align: -3px;
+                margin-left: 3px;
+            }
+        }
+    }
+}

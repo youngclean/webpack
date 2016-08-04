@@ -1,0 +1,755 @@
+{
+    "cubeInfo": {
+        "catalogName": "HIGO_Catalog",
+        "schemaName": "schema084297",
+        "name": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu",
+        "caption": "company_sales_record_jiasu",
+        "connectionName": "HIGO-DS",
+        "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+    },
+    "supportDateFormat": [
+        "yyyy-MM-dd hh:mi:ss",
+        "yyyy/MM/dd",
+        "yyyyMM",
+        "yyyyMMdd",
+        "yyyy-MM-dd"
+    ],
+    "children": [{
+        "contextmenu": "menu-drillCategory",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[9386f50f-2ba2-4364-9911-3cde24ab2f53]",
+        "name": "9386f50f-2ba2-4364-9911-3cde24ab2f53",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[9386f50f-2ba2-4364-9911-3cde24ab2f53]",
+            "name": "9386f50f-2ba2-4364-9911-3cde24ab2f53",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[area].[area].[area]",
+                "name": "区域",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "REGION",
+                    "showName": "区域",
+                    "name": "area",
+                    "colName": "area"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[province].[province].[province]",
+                "name": "省份",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "PROVINCE",
+                    "showName": "省份",
+                    "name": "province",
+                    "colName": "province"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[city].[city].[city]",
+                "name": "城市",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "CITY",
+                    "showName": "城市",
+                    "name": "city",
+                    "colName": "city"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "地理维度分组",
+                "name": "9386f50f-2ba2-4364-9911-3cde24ab2f53"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "folder",
+        "caption": "地理维度分组",
+        "params": {
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "drillFolder"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_box]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "产品包箱",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_box].[product_box]",
+            "name": "产品包箱",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_box].[product_box].[product_box]",
+                "name": "产品包箱",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "showName": "产品包箱",
+                    "name": "product_box",
+                    "colName": "product_box"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "产品包箱",
+                "name": "product_box"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "产品包箱",
+            "name": "product_box",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_type]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "产品类型",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_type].[product_type]",
+            "name": "产品类型",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_type].[product_type].[product_type]",
+                "name": "产品类型",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "showName": "产品类型",
+                    "name": "product_type",
+                    "colName": "product_type"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "产品类型",
+                "name": "product_type"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "产品类型",
+            "name": "product_type",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_name4]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "产品名称",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_name4].[product_name4]",
+            "name": "产品名称",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_name4].[product_name4].[product_name4]",
+                "name": "产品名称",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "showName": "产品名称",
+                    "name": "product_name4",
+                    "colName": "product_name"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "产品名称",
+                "name": "product_name4"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "产品名称",
+            "name": "product_name4",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_sub_type601]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "产品小类",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_sub_type601].[product_sub_type601]",
+            "name": "产品小类",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[product_sub_type601].[product_sub_type601].[product_sub_type601]",
+                "name": "产品小类",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "showName": "产品小类",
+                    "name": "product_sub_type601",
+                    "colName": "product_sub_type"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "产品小类",
+                "name": "product_sub_type601"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "产品小类",
+            "name": "product_sub_type601",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[city]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "城市",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[city].[city]",
+            "name": "城市",
+            "children": [],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "城市",
+                "name": "city"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "geographic": "true",
+            "showName": "城市",
+            "name": "city",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_id75]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "订单编号",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_id75].[order_id75]",
+            "name": "订单编号",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_id75].[order_id75].[order_id75]",
+                "name": "订单编号",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "showName": "订单编号",
+                    "name": "order_id75",
+                    "colName": "order_id"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "订单编号",
+                "name": "order_id75"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "订单编号",
+            "name": "order_id75",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_level1]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "订单等级",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_level1].[order_level1]",
+            "name": "订单等级",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_level1].[order_level1].[order_level1]",
+                "name": "订单等级",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "showName": "订单等级",
+                    "name": "order_level1",
+                    "colName": "order_level"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "订单等级",
+                "name": "order_level1"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "订单等级",
+            "name": "order_level1",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[report_date]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "订单日期",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[report_date].[report_date]",
+            "name": "订单日期",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[report_date].[report_date].[yearRange]",
+                "name": "订单日期(年)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "yearRegion",
+                    "timeType": "yearRegion",
+                    "showName": "订单日期(年)",
+                    "order": "1",
+                    "name": "yearRange",
+                    "colName": "report_date"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[report_date].[report_date].[monthRange]",
+                "name": "订单日期(月)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "monthRegion",
+                    "timeType": "monthRegion",
+                    "showName": "订单日期(月)",
+                    "order": "2",
+                    "name": "monthRange",
+                    "colName": "report_date"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[report_date].[report_date].[weekRange]",
+                "name": "订单日期(周)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "weekRegion",
+                    "timeType": "weekRegion",
+                    "showName": "订单日期(周)",
+                    "order": "3",
+                    "weekStart": "1",
+                    "name": "weekRange",
+                    "colName": "report_date"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[report_date].[report_date].[dayRange]",
+                "name": "订单日期(日)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "isBig": "false",
+                    "levelGranularity": "dateRegion",
+                    "timeType": "dateRegion",
+                    "showName": "订单日期(日)",
+                    "order": "4",
+                    "name": "dayRange",
+                    "colName": "report_date"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "订单日期",
+                "name": "report_date"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "订单日期",
+            "name": "report_date",
+            "type": "StrDateTypeDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[customer_name19624262137354]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "客户名称",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[customer_name19624262137354].[customer_name19624262137354]",
+            "name": "客户名称",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[customer_name19624262137354].[customer_name19624262137354].[customer_name19624262137354]",
+                "name": "客户名称",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "showName": "客户名称",
+                    "name": "customer_name19624262137354",
+                    "colName": "customer_name"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "客户名称",
+                "name": "customer_name19624262137354"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "客户名称",
+            "name": "customer_name19624262137354",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[area]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "区域",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[area].[area]",
+            "name": "区域",
+            "children": [],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "区域",
+                "name": "area"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "geographic": "true",
+            "showName": "区域",
+            "name": "area",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[province]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "省份",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[province].[province]",
+            "name": "省份",
+            "children": [],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "省份",
+                "name": "province"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "geographic": "true",
+            "showName": "省份",
+            "name": "province",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_type669]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "运输方式",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_type669].[shipping_type669]",
+            "name": "运输方式",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_type669].[shipping_type669].[shipping_type669]",
+                "name": "运输方式",
+                "colType": "string",
+                "iconSkin": "level",
+                "params": {
+                    "showName": "运输方式",
+                    "name": "shipping_type669",
+                    "colName": "shipping_type"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "运输方式",
+                "name": "shipping_type669"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "运输方式",
+            "name": "shipping_type669",
+            "type": "StandardDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-3",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_date]",
+        "tableName": "alipaydm_dev_company_sales_record_jiasu",
+        "name": "运输日期",
+        "children": [{
+            "contextmenu": "menu-group-4",
+            "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_date].[shipping_date]",
+            "name": "运输日期",
+            "children": [{
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_date].[shipping_date].[yearRegion]",
+                "name": "运输日期(年)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "levelGranularity": "yearRegion",
+                    "timeType": "yearRegion",
+                    "showName": "运输日期(年)",
+                    "order": "0",
+                    "name": "yearRegion",
+                    "colName": "shipping_date"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_date].[shipping_date].[monthRegion]",
+                "name": "运输日期(月)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "levelGranularity": "monthRegion",
+                    "timeType": "monthRegion",
+                    "showName": "运输日期(月)",
+                    "order": "1",
+                    "name": "monthRegion",
+                    "colName": "shipping_date"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_date].[shipping_date].[weekRegion]",
+                "name": "运输日期(周)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "levelGranularity": "weekRegion",
+                    "timeType": "weekRegion",
+                    "showName": "运输日期(周)",
+                    "order": "2",
+                    "name": "weekRegion",
+                    "colName": "shipping_date"
+                },
+                "type": "level"
+            }, {
+                "contextmenu": "menu-group-5",
+                "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_date].[shipping_date].[dateRegion]",
+                "name": "运输日期(日)",
+                "colType": "datetime",
+                "iconSkin": "level",
+                "params": {
+                    "levelGranularity": "dateRegion",
+                    "timeType": "dateRegion",
+                    "showName": "运输日期(日)",
+                    "order": "3",
+                    "name": "dateRegion",
+                    "colName": "shipping_date"
+                },
+                "type": "level"
+            }],
+            "iconSkin": "hierarchy",
+            "params": {
+                "showName": "运输日期",
+                "name": "shipping_date"
+            },
+            "type": "hierarchy"
+        }],
+        "iconSkin": "dim",
+        "params": {
+            "showName": "运输日期",
+            "name": "shipping_date",
+            "type": "StrDateTypeDimension"
+        },
+        "type": "dim"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[price]",
+        "name": "单价",
+        "colType": "number",
+        "iconSkin": "measure",
+        "params": {
+            "aggregator": "sum",
+            "showName": "单价",
+            "factTabCol": "price",
+            "name": "price",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "measure"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_amt]",
+        "name": "订单金额",
+        "colType": "number",
+        "iconSkin": "measure",
+        "params": {
+            "formatString": "#,###",
+            "aggregator": "sum",
+            "showName": "订单金额",
+            "factTabCol": "order_amt",
+            "name": "order_amt",
+            "multString": "",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "measure"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_number]",
+        "name": "订单数量",
+        "colType": "number",
+        "iconSkin": "measure",
+        "params": {
+            "formatString": "",
+            "aggregator": "sum",
+            "showName": "订单数量",
+            "factTabCol": "order_number",
+            "name": "order_number",
+            "multString": "",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "measure"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[orderNum]",
+        "name": "订单数量2",
+        "iconSkin": "calMember",
+        "params": {
+            "formatString": "0.0",
+            "showName": "订单数量2",
+            "name": "orderNum",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu",
+            "formula": "order_amt / price"
+        },
+        "type": "calMember"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[order_num3]",
+        "name": "订单数量3",
+        "iconSkin": "calMember",
+        "params": {
+            "formatString": "",
+            "showName": "订单数量3",
+            "name": "order_num3",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu",
+            "formula": "order_number / sum(order_number)"
+        },
+        "type": "calMember"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[profit_amt]",
+        "name": "利润金额",
+        "colType": "number",
+        "iconSkin": "measure",
+        "params": {
+            "formatString": "",
+            "aggregator": "sum",
+            "showName": "利润金额",
+            "factTabCol": "profit_amt",
+            "name": "profit_amt",
+            "multString": "",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "measure"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[shipping_cost]",
+        "name": "运输成本",
+        "colType": "number",
+        "iconSkin": "measure",
+        "params": {
+            "aggregator": "sum",
+            "showName": "运输成本",
+            "factTabCol": "shipping_cost",
+            "name": "shipping_cost",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "measure"
+    }, {
+        "contextmenu": "menu-group-5",
+        "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu.[back_point]",
+        "name": "折扣点",
+        "colType": "number",
+        "iconSkin": "measure",
+        "params": {
+            "formatString": "#,##0.00%",
+            "aggregator": "avg",
+            "showName": "折扣点",
+            "factTabCol": "back_point",
+            "name": "back_point",
+            "multString": "",
+            "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+        },
+        "type": "measure"
+    }],
+    "params": {
+        "cubeName": "company_sales_record_jiasu",
+        "dimDsId": "13157f46-44c5-4591-8be9-c9723c8ace3d",
+        "ename": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu",
+        "dsId": "002",
+        "factTable": "alipaydm_dev_company_sales_record_jiasu",
+        "cubeId": "c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu"
+    },
+    "type": "cube",
+    "id": "schema084297.c87c3c53-9828-4959-8b36-43fa29f510fc-company_sales_record_jiasu",
+    "contextmenu": "menu-group-2",
+    "dbName": "dwsap",
+    "autoQuery": "true",
+    "name": "company_sales_record_jiasu",
+    "owner": true,
+    "iconSkin": "cube",
+    "dbType": "garuda"
+}
