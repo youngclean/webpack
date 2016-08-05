@@ -107,7 +107,7 @@ module.exports = {
     }
 }
 ```
-####安装第三方框架和库
+####第三方框架和库
 ```
 npm install --save jquery
 ```
@@ -126,10 +126,57 @@ for (const cat of cats) {
     $('<li></li>').text(cat).appendTo(ul);
 }
 ```
-重新webpack
+#####css 加载
+传统方式中html页面通过link标签引入css，既然用webpack，我们也可以模块化css，通过import，这样css完全可以跟着对应的js模块，做到真正的模块化
+使用 sass-loader 编译sass或使用less-loader编译 less
+```
+npm install style-loader css-loader --save-dev
+npm install less-loader --save-dev
+```
+
+####再次修改webpack.config.js
+```
+module.exports = {
+    entry: './src/test/index.js', //入口
+    output: {
+        path: './bin',  //输出
+        filename: 'index.bundle.js'
+    },
+     module: {
+        loaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+        },
+        {test: /\.(less|css)$/, loaders: ['style', 'css', 'less'] }
+        ]
+    }
+}
+```
+####在index.js引入less
+` import index.less `
+
+####加载图片
+图片同样可以是模块，但使用的是 file loader 或者 url loader，后者会根据定义的大小范围来判断是否使用 data url
+
+最后重新webpack
 
 --------------
-这个时候去访问index.html，得部署本地网络了，类似于express，webpack也提供了这样的模块 webpack-cdn-server
+这个时候去访问index.html，得部署本地网络了，类似于express，webpack也提供了这样的模块 webpack-dev-server
+####全局安装 webpack-dev-server
+` npm install webpack-dev-server -g`
+####在项目目录webpack下执行
+`webpack-dev-server`
+这样，我们就可以在默认的 http://localhost:8080 网址上打开我们的 index.html
+
+* webpack-dev-server 提供了两种模式用于自动刷新页面
+  * ifame模式
+  * inline模式
+这里不做赘述，属于高阶应用，后续开篇吧
+
+  
+
+
 
 
 
