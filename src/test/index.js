@@ -1,5 +1,5 @@
 'use strict';
-import 'index.css';
+import 'index.less';
 import $ from 'jquery';
 
 $('<h1>This is Test</h1>').appendTo('body');

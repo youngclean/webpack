@@ -24,7 +24,7 @@ var config = {
         }]
     },
     resolve: {
-        extensions: ['', '.js', '.jsx', '.css'],
+        extensions: ['', '.js', '.jsx', '.less'],
         modulesDirectories: ['node_modules', 'src/test']
     }
 };
