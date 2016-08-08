@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 var path = require("path");
-module.exports = {
+var src_path = './src';
+
+var config = {
     entry: {
         app: ['./src/test/index.js']
     },
@@ -13,16 +15,17 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
+        }, {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader'
+        }, {
+            test: /\.less$/,
+            loader: 'style!css!less'
         }]
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx', '.css'],
+        modulesDirectories: ['node_modules', 'src/test']
     }
-    // plugins: [
-    //     new webpack.optimize.UglifyJsPlugin({
-    //         compress: {
-    //             warnings: false,
-    //         },
-    //         output: {
-    //             comments: false,
-    //         },
-    //     }),
-    // ]
-}
+};
+module.exports = config;
