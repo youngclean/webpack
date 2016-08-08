@@ -150,11 +150,15 @@ module.exports = {
         },
         {test: /\.(less|css)$/, loaders: ['style', 'css', 'less'] }
         ]
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx', '.less'],
+        modulesDirectories: ['node_modules', 'src/test'] //这里一定要加src/test,否则找不到index.less;
     }
 }
 ```
 ####在index.js引入less
-` import index.less `
+` import 'index.less' `
 
 ####加载图片
 图片同样可以是模块，但使用的是 file loader 或者 url loader，后者会根据定义的大小范围来判断是否使用 data url
@@ -172,6 +176,7 @@ module.exports = {
 * webpack-dev-server 提供了两种模式用于自动刷新页面
   * ifame模式
   * inline模式
+  
 这里不做赘述，属于高阶应用，后续开篇吧
 
   
