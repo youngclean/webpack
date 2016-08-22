@@ -125,7 +125,6 @@ module.loaders: [
    }
 ]
 ```
-###resolve
 
 
 
