@@ -1,11 +1,11 @@
-#webpack入门
+# webpack入门
 
 `请先创建github repository`
 
-####必备环境
+#### 必备环境
 nodeJs
 npm
-####代码仓库
+#### 代码仓库
 github最好装上客户端
 
 ----
@@ -23,15 +23,15 @@ github最好装上客户端
 #### 初始化 npm project
 `npm init ` 回答一系列问题
 
-####当前目录下安装webpack
+#### 当前目录下安装webpack
 `npm install --save-dev webpack`
 
-####创建存放源码及打包后代码的目录
+#### 创建存放源码及打包后代码的目录
 ```
 mkdir src   #源码
 mkdir bin   #打包后的代码或图片
 ```
-####创建index.html，放在src下
+#### 创建index.html，放在src下
 ```
 <!DOCTYPE html>
 <html>
@@ -43,12 +43,12 @@ mkdir bin   #打包后的代码或图片
   </body>
 </html>
 ```
-####创建test/index.js，放在src下
+#### 创建test/index.js，放在src下
 ```
 var arr = ['webpack'];
 console.log(arr);
 ```
-####webpack配置
+#### webpack配置
 创建webpack.config.js
 ```
 module.exports = {
@@ -86,11 +86,11 @@ npm install --save-dev  babel-loader
 npm install --save-dev  babel-preset-react
 npm install --save-dev  react
 ```
-####增加.babelrc
+#### 增加.babelrc
 ```
 { "presets": [ "es2015","react" ] }
 ```
-####修改webpack.config.js
+#### 修改webpack.config.js
 ```
 module.exports = {
     entry: './src/test/index.js', //入口
@@ -107,11 +107,11 @@ module.exports = {
     }
 }
 ```
-####第三方框架和库
+#### 第三方框架和库
 ```
 npm install --save jquery
 ```
-####修改index.js
+#### 修改index.js
 ```
 'use strict';
 
@@ -126,7 +126,7 @@ for (const cat of cats) {
     $('<li></li>').text(cat).appendTo(ul);
 }
 ```
-#####css 加载
+##### css 加载
 传统方式中html页面通过link标签引入css，既然用webpack，我们也可以模块化css，通过import，这样css完全可以跟着对应的js模块，做到真正的模块化
 使用 sass-loader 编译sass或使用less-loader编译 less
 ```
@@ -134,7 +134,7 @@ npm install style-loader css-loader --save-dev
 npm install less-loader --save-dev
 ```
 
-####再次修改webpack.config.js
+#### 再次修改webpack.config.js
 ```
 module.exports = {
     entry: './src/test/index.js', //入口
@@ -157,19 +157,19 @@ module.exports = {
     }
 }
 ```
-####在index.js引入less
+#### 在index.js引入less
 ` import 'index.less' `
 
-####加载图片
+#### 加载图片
 图片同样可以是模块，但使用的是 file loader 或者 url loader，后者会根据定义的大小范围来判断是否使用 data url
 
 最后重新webpack
 
 --------------
 这个时候去访问index.html，得部署本地网络了，类似于express，webpack也提供了这样的模块 webpack-dev-server
-####全局安装 webpack-dev-server
+#### 全局安装 webpack-dev-server
 ` npm install webpack-dev-server -g`
-####在项目目录webpack下执行
+#### 在项目目录webpack下执行
 `webpack-dev-server`
 这样，我们就可以在默认的 http://localhost:8080 网址上打开我们的 index.html
 
