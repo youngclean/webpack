@@ -11,7 +11,7 @@ github最好装上客户端
 ----
 ### 开始webpack之旅
 #### 全局安装webpack
-`npm webpack -g`
+`npm install webpack -g`
 
 这样可以在cmd中直接使用以下命令
 
