@@ -1,4 +1,4 @@
-##聊聊webpack中常用配置项
+## 聊聊webpack中常用配置项
 先来个简单的配置
 ```
  {
@@ -9,9 +9,10 @@
         filename: 'index.js'
   }
 ```
-###context 上下文
+### context 上下文
 基本路径，且是绝对路径，用来解析entry(入口)的，相对这个基本路径可进行缩写
-###entry 打包入口点
+
+### entry 打包入口点
 **有3种写法：**
 + string形式：即上面这种，决定模块启动时加载的入口
 + array形式：所有模块启动时都会加载，最后一个是出口 `entry:['entry1', 'entry2']`
@@ -31,7 +32,7 @@
     }
 }
 ```
-###output 输出
+### output 输出
 + 一个entry
 ```
  {
@@ -64,7 +65,7 @@
 }
 // 写入磁盘: ./built/page1.js, ./built/page2.js
 ```
-####output.publicPath
+#### output.publicPath
 在浏览器中访问时的公共url地址，html页面中通过sript或link进行引用
 **config.js**
 ```
@@ -97,7 +98,7 @@ output: {
 ```
  __webpack_public_path__ = myRuntimePublicPath
 ```
-###module
+### module
 + module.loaders  一组或多组模块加载器
 加载器包含以下属性字段
 ```
